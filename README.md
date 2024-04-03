@@ -66,8 +66,8 @@ Comparison of classification method spectra
 ![Selected_wavelengths_kmeans_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/f432c7a1-08e6-4aeb-acd6-566406a802f4)
 Selected wavelengths from the root spectra second derivative
 
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/154b37b5-72e8-4db5-8955-67f805f30388" width = "100">
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/d0a9dcc5-34e5-4a3a-b55f-83d43242f486" width = "100"><br>
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/154b37b5-72e8-4db5-8955-67f805f30388" width = "400">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/d0a9dcc5-34e5-4a3a-b55f-83d43242f486" width = "400"><br>
 Cropped datacube and classified image<br>
 
 <img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/504c8ca7-ac35-4282-a4b0-7addd2ed78a0" width = "500">
