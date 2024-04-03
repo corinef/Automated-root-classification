@@ -1,34 +1,25 @@
 
 # Automated-root-classification
 
-This code is for classifying hyperspectral images that were generated using the IMEC VNIR SNAPSCAN camera. The code may be used for other hyperspectral datasets, however to use the data from Spectral Angle Mapper supervised classification, the images will need to be processed in other software if HSI Studio from IMEC is not available. The code is split into four separate scripts, which need to be run one after the other, to save computer memory when using larger number of sample data.
-
-## What to achieve with this code.
+## Description
+This code is for classifying hyperspectral images that were generated using the IMEC VNIR SNAPSCAN camera. The code may be used for other hyperspectral datasets, however to use the data from Spectral Angle Mapper supervised classification, the images will need to be processed in other software if HSI Studio from IMEC is not available. The code is split into four separate scripts, which need to be run one after the other, to save computer memory when using larger number of sample data. <br>
 
 This code will generate four separate folders under a new folder 'Data_classification_results' which will contain the K-Means classified data as a classified image (.png) and the binary data (.csv), the data pre-treatments 
-## What files are needed (type of data).
 
+## Files needed
 Two images in 'Data_files' are provided as an example of how the code works. The raw image data is in ENVI format, containing a header file (.hdr) and raw data file (.raw). Both are needed to extract the raw data. The classified image data from SAM in HSI Studio (IMEC) contains the class image (.png) and the spectra for each class (.csv). 
 # Protocol of running code.
 
-### How to install.
+### How to install
+### Prerequisites
+- [Anaconda](https://www.anaconda.com/download)
 
-Download [Anaconda](https://www.anaconda.com/download)
-
-Download all scripts and extract the files in data_files.zip under a parent folder
-
-Launch Jupyter Notebook
-
-Navigate to parent folder and run each script in sequential order
-  - Make sure to input the path to the parent folder under 'folder'
-
-### Dependencies needed.
-
+### Dependencies needed
 ```py 
 pip install -r https://github.com/corinef/Automated-root-classification/blob/main/requirements.txt
 ```
 
-## Step-by-step guide for processing images.
+## Step-by-step guide for processing images
 
 ### K-Means clustering
 - Load data files
@@ -51,8 +42,6 @@ pip install -r https://github.com/corinef/Automated-root-classification/blob/mai
 - Convert the datacube and pixel labels to a dataframe and reduce the bands (columns) to the selected bands
 - Merge all datasets to one dataframe
 - Run the classification model on the dataframe
-
-# Interpretations of results.
 
 ## Example of image interpretation.
 <img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/6784af75-2d54-49eb-ae9f-374399e0d91e" width = "500">
@@ -78,7 +67,6 @@ Random Forest (RF) model confusion matrix and RF predicted image
 Comparison of predicted spectra
 
 ## Libraries used.
-
 - Spectral Python (SPy)
   - website: [https://www.spectralpython.net/](https://www.spectralpython.net/)
   - citation: [Boggs, T., March, D., kormang, McGibbney, L. J., Magimel, F., Mason, G., Banman, K., Jouni, M., Kumar, R., The Gitter Badger, Aarnio, T., Wang, W., & kidpixo. (2022)](https://doi.org/10.5281/zenodo.7135091)
