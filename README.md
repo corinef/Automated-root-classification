@@ -82,12 +82,27 @@ Comparison of predicted spectra
 - Spectral Python (SPy)
   - website: [https://www.spectralpython.net/](https://www.spectralpython.net/)
   - citation: [Boggs, T., March, D., kormang, McGibbney, L. J., Magimel, F., Mason, G., Banman, K., Jouni, M., Kumar, R., The Gitter Badger, Aarnio, T., Wang, W., & kidpixo. (2022)](https://doi.org/10.5281/zenodo.7135091)
-  - license: The MIT License (MIT)
+  - license: "The MIT License (MIT)"
 - matplotlib:
   - website: [https://matplotlib.org/](https://matplotlib.org/)
   - citation: [J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.](https://ieeexplore.ieee.org/document/4160265)
   - license: "Matplotlib only uses BSD compatible code, and its license is based on the PSF license."
-- 
+- Pandas:
+  - website:[https://pandas.pydata.org/](https://pandas.pydata.org/)
+  - citation: [The Pandas Development Team. (2022). pandas-dev/pandas: Pandas (1.4.2).](https://doi.org/10.5281/zenodo.10426137)
+  - license:  "Pandas is distributed under the modified (3-clause) BSD License"
+- SciPy :
+  - website:[https://scipy.org/](https://scipy.org/)
+  - citation: [Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., Burovski, E., Peterson, P., Weckesser, W., Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N., Nelson, A. R. J., Jones, E., Kern, R., Larson, E., . . . SciPy, C. (2020). Author Correction: SciPy 1.0: fundamental algorithms for scientific computing in Python. Nature Methods, 17(3), 352-352.](https://doi.org/10.1038/s41592-020-0772-5 )
+  - license:  "SciPy is distributed under the modified (3-clause) BSD license."
+- Pillow (PIL Fork):
+  - website:[https://pypi.org/project/pillow/](https://pypi.org/project/pillow/)
+  - citation: [Clark, A. (2015). Pillow (PIL Fork) Documentation. (9.0.1). readthedocs.](https://buildmedia.readthedocs.org/media/pdf/pillow/latest/pillow.pdf )
+  - license:  "Pillow is licensed under the open source HPND License"
+- Scikit-learn:
+  - website:[https://scikit-learn.org/stable/index.html](https://scikit-learn.org/stable/index.html)
+  - citation: [Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.](https://scikit-learn.org/stable/index.html )
+  - license:  "Scikit-learn is distributed under the modified (3-clause) BSD license."
 
   
 ## License
