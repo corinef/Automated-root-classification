@@ -11,7 +11,7 @@ This code will generate the results under a new folder 'Data_classification_resu
 (4) The model predicted images (.png), labelled pixel matrices (.csv), confusion matrics (.png), classification reports (.xlsx), comparison of the predicted spectra (.png), and PLS-DA plots (.png)<br>
 
 ## Files needed
-Two images in [Data_files](Automated-root-classification/Data files.md) are provided as an example of how the code works. The raw image data is in ENVI format, containing a header file (.hdr) and raw data file (.raw). Both are needed to extract the raw data. The classified image data from SAM in HSI Studio (IMEC) contains the class image (.png) and the spectra for each class (.csv). 
+Two images in [Data_files](Automated-root-classification/Data_files.md) are provided as an example of how the code works. The raw image data is in ENVI format, containing a header file (.hdr) and raw data file (.raw). Both are needed to extract the raw data. The classified image data from SAM in HSI Studio (IMEC) contains the class image (.png) and the spectra for each class (.csv). 
 
 # Protocol of running code.
 
