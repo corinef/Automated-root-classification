@@ -57,25 +57,25 @@ pip install -r https://github.com/corinef/Automated-root-classification/blob/mai
 
 **Results of SAM (left) and K-Means (right) classification**
 
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/19fd9f78-9f7e-4411-bc45-abe1116e6714"><br>
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/7d22336d-8959-42fa-b425-536b0a67f9db"><br>
 
 **Comparison of classification method spectra**
 
-![Selected_wavelengths_SAM_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/7b760116-bae3-4ef2-b9b8-c173bb853c43)
-![Selected_wavelengths_kmeans_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/f432c7a1-08e6-4aeb-acd6-566406a802f4)
+![Selected_wavelengths_SAM_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/248cb15c-e279-4796-a77f-77831e5820fd)
+![Selected_wavelengths_kmeans_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/a9c162c6-aa8a-4fee-a666-1e0b05f6990a)
 **Selected wavelengths from the second derivative of the root spectra**
 
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/154b37b5-72e8-4db5-8955-67f805f30388" width = "400">
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/d0a9dcc5-34e5-4a3a-b55f-83d43242f486" width = "400"><br>
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/a4f648a4-f4b2-4d44-a19f-cd26db86a852" width = "400">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/2f3ba667-f64c-40f4-ab30-1ac828f865b0" width = "400"><br>
 
 **Cropped datacube and classified image**
 
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/504c8ca7-ac35-4282-a4b0-7addd2ed78a0" width = "500">
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/3b941722-3cc9-4760-9c56-c3b2e98d3c23" width = "500">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/8a69f13f-8475-4a55-8f41-4acc7f07a7f9" width = "500">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/ca46aa83-8dd1-42bc-9ff0-2ce0dca34212" width = "500">
 
 **Random Forest (RF) model confusion matrix and RF predicted image**
 
-![Predicted_spectra](https://github.com/corinef/Automated-root-classification/assets/82867617/fc272c61-54fc-4d3a-a4e0-7d9e578c55d9)
+![Predicted_spectra](https://github.com/corinef/Automated-root-classification/assets/82867617/4a105369-0e4d-4c92-a009-f9d41ed28f9c)
 
 **Comparison of predicted spectra**
 
