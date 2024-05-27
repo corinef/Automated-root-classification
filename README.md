@@ -5,10 +5,10 @@
 This code is for classifying hyperspectral images that were generated using the IMEC VNIR SNAPSCAN camera. The code may be used for other hyperspectral datasets, however to use the data from Spectral Angle Mapper supervised classification, the images will need to be processed in other software if HSI Studio from IMEC is not available. The code is split into four separate scripts, which need to be run one after the other, to save computer memory when using larger number of sample data. <br>
 
 This code will generate the results under a new folder 'Data_classification_results'. These will contains:<br>
-(1) The K-Means classified data as a classified image (.png) and the labelled pixel matrix (.csv)<br>
-(2) The data pre-treatments comparing the selection spectra (.png), selected bands (.csv), and the selected wavelengths plotted over the second derivative of the root spectra (.png)<br>
-(3) The generation of the classification model (.csv), with the model training confusion matrix (.png), and classification report (.xlsx)<br>
-(4) The model predicted images (.png), labelled pixel matrices (.csv), confusion matrics (.png), classification reports (.xlsx), comparison of the predicted spectra (.png), and PLS-DA plots (.png)<br>
+(1) The K-Means classified data as a classified image and the labelled pixel matrix <br>
+(2) The data pre-treatments comparing the selection spectra, selected bands, and the selected wavelengths plotted over the second derivative of the root spectra<br>
+(3) The generation of the classification model, with the model training confusion matrix, and classification report<br>
+(4) The model predicted images, labelled pixel matrices, confusion matrics, accuracy reports, comparison of the predicted spectra, and PLS-DA plots, and estimated biomass<br>
 
 ## Files needed
 Two images in [Data_files](Data_files.md) are provided as an example of how the code works. The raw image data is in ENVI format, containing a header file (.hdr) and raw data file (.raw). Both are needed to extract the raw data. The classified image data from SAM in HSI Studio (IMEC) contains the class image (.png) and the spectra for each class (.csv). 
@@ -61,23 +61,39 @@ pip install -r https://github.com/corinef/Automated-root-classification/blob/mai
 
 **Comparison of classification method spectra**
 
-![Selected_wavelengths_SAM_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/248cb15c-e279-4796-a77f-77831e5820fd)
-![Selected_wavelengths_kmeans_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/a9c162c6-aa8a-4fee-a666-1e0b05f6990a)
+![Selected_wavelengths_SAM_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/6b123e38-7e23-4e96-b7d3-1a926312dfaf)
+![Selected_wavelengths_kmans_rootspectra](https://github.com/corinef/Automated-root-classification/assets/82867617/159a9158-4002-4ab1-944c-2afd12162f91)
+
 **Selected wavelengths from the second derivative of the root spectra**
 
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/a4f648a4-f4b2-4d44-a19f-cd26db86a852" width = "400">
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/2f3ba667-f64c-40f4-ab30-1ac828f865b0" width = "400"><br>
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/a4f648a4-f4b2-4d44-a19f-cd26db86a852" width = "300">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/2f3ba667-f64c-40f4-ab30-1ac828f865b0" width = "300">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/e67938c2-605b-4c6f-aab9-e4d955a152a3" width = "300"><br>
 
-**Cropped datacube and classified image**
+**Cropped region of datacube (left), SAM classified image (middle), K-Means classified image (right)**
 
 <img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/8a69f13f-8475-4a55-8f41-4acc7f07a7f9" width = "500">
-<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/ca46aa83-8dd1-42bc-9ff0-2ce0dca34212" width = "500">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/3c3dfbf7-d7f7-4b2b-b519-ed6ab7e8e841" width = "500">
 
-**Random Forest (RF) model confusion matrix and RF predicted image**
+**Random Forest (RF) model confusion matrix, SAM (left), K-Means (right)**
+
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/ca46aa83-8dd1-42bc-9ff0-2ce0dca34212" width = "500">
+<img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/37cf849a-b540-452e-94ae-ad6a09f43f30" width = "500">
+
+**RF predicted image from SAM (left), K-Means (right)**
+
+![Accuracy_reports](https://github.com/corinef/Automated-root-classification/assets/82867617/a8d8ba61-1ca0-4224-80b0-5ccd378895b9)
+
+**Accuracy reports**
 
 ![Predicted_spectra](https://github.com/corinef/Automated-root-classification/assets/82867617/4a105369-0e4d-4c92-a009-f9d41ed28f9c)
 
 **Comparison of predicted spectra**
+
+![Biomass](https://github.com/corinef/Automated-root-classification/assets/82867617/7549c3c1-032b-42b9-8f8b-42323edad765)
+
+**Estimated biomass**
+
 
 ## Libraries used
 - Spectral Python (SPy)
