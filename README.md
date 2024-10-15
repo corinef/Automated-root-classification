@@ -49,9 +49,8 @@ pip install -r https://github.com/corinef/Automated-root-classification/blob/mai
 - Run the classification model on the dataframe
 
 ### Model prediction
-- 
 
-## Example of image interpretation.
+#### Example of image interpretation.
 <img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/6784af75-2d54-49eb-ae9f-374399e0d91e" width = "400">
 <img src = "https://github.com/corinef/Automated-root-classification/assets/82867617/e6b2c7cb-4273-40cc-a2f6-81aaf5687df2" width = "400"><br>
 
@@ -95,7 +94,7 @@ pip install -r https://github.com/corinef/Automated-root-classification/blob/mai
 **Estimated biomass**
 
 
-## Libraries used
+### Libraries used
 - Spectral Python (SPy)
   - website: [https://www.spectralpython.net/](https://www.spectralpython.net/)
   - citation: [Boggs, T., March, D., kormang, McGibbney, L. J., Magimel, F., Mason, G., Banman, K., Jouni, M., Kumar, R., The Gitter Badger, Aarnio, T., Wang, W., & kidpixo. (2022)](https://doi.org/10.5281/zenodo.7135091)
